@@ -1,0 +1,18 @@
+#bio {
+	height: 20rem;
+	background: green;
+}
+
+
+#bio h2 {
+	font-size: 5rem;
+}
+
+main {
+	position: relative;
+	top: 5rem;
+}
+
+footer {
+	margin-top: 6rem;
+}

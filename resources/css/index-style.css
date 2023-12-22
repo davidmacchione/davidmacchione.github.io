@@ -1,10 +1,11 @@
+
 /*Video Banner*/
 
 .video-banner video {
 	overflow: hidden;
-
 	height: auto;
 	width: 100% !important;
+	margin-bottom: 3.5rem;
 }
 
 
@@ -14,15 +15,12 @@
 	margin-left: 3%;
 	margin-right: 3%;
 	background: green;
-	
 	display: flex;
 	align-content: center;
-
-
+	margin-bottom: 3%;
 }
 
 #about-text {
-	
 	width: 70%;
 	margin-left: 3%;
 	margin-right: 1%;
@@ -49,7 +47,6 @@
 .about #read-more {
 	width: 18%;
 	background: black;
-
 	margin-top: 10px;
 	padding: 10px;
 	margin-left: auto;
@@ -61,7 +58,6 @@
 span a {
 	text-decoration: none;
 	color: seashell;
-
 }
 
 .about #read-more:hover {
@@ -69,33 +65,91 @@ span a {
 	border: 2px solid black;
 }
 
-
-
 #about-image {
 	background: red;
 	width: 25%;
 	height: 25%;
 	display: flex;
 	overflow: hidden;
-
 	margin-top: auto;
 	margin-bottom: auto;
-	
-	
 }
 
 #headshot {
 	margin: auto;
 	width: 90%;
 	height: auto;
-
-
 }
 
 /* Videos */
 
 .videos {
-	margin: 3rem;
+	margin-left: 3%;
+	margin-right: 3%;
 	background: red;
-	height: 15rem;
+	display: flex;
+	margin-bottom: 3%;
+	flex-direction: column;
+}
+
+.videos h2 {
+	font-size: ;
+	margin-left: 3%;
+	font-size: 3rem;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+#video-containers {
+	display: flex;
+	flex-direction: row;
+}
+
+.featured {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	background: orange;
+	align-items: center;
+	padding: 0.8rem;
+	margin-bottom: 3rem;
+}
+
+.featured iframe {
+	width: 73%;
+
+}
+
+.other-videos {
+	width: 40%;
+	height: auto;
+	background: green;
+	display: flex;
+	flex-direction: column;
+	padding: 0.8rem;
+	margin-bottom: 3rem;
+}
+
+#other-1 {
+	display: flex;
+	flex-direction: row;
+	background: blue;
+	padding: 0.5rem;
+}
+
+#other-2 {
+	display: flex;
+	flex-direction: row;
+	background: purple;
+	padding: 0.5rem;
+}
+
+.other-videos iframe {
+	overflow: hidden;
+	height: 100%;
+	width: 55%;
+}
+
+caption {
+	background: black;
 }

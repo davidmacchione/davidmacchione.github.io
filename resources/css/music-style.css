@@ -1,0 +1,18 @@
+#music {
+	height: 20rem;
+	background: red;
+}
+
+
+#music h2 {
+	font-size: 5rem;
+}
+
+main {
+	position: relative;
+	top: 5rem;
+}
+
+footer {
+	margin-top: 6rem;
+}
