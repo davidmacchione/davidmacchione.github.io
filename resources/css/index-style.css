@@ -90,6 +90,7 @@ span a {
 	display: flex;
 	margin-bottom: 3%;
 	flex-direction: column;
+	justify-items: space-between;
 }
 
 .videos h2 {
@@ -100,13 +101,17 @@ span a {
 	margin-bottom: 1%;
 }
 
+.videos .caption {
+	margin: auto;
+}
+
 #video-containers {
 	display: flex;
 	flex-direction: row;
 }
 
 .featured {
-	width: 60%;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	background: orange;
@@ -117,17 +122,21 @@ span a {
 
 .featured iframe {
 	width: 73%;
+}
 
+.featured .caption {
+	margin-top: 1.5rem;
 }
 
 .other-videos {
-	width: 40%;
+	width: 50%;
 	height: auto;
 	background: green;
 	display: flex;
 	flex-direction: column;
 	padding: 0.8rem;
 	margin-bottom: 3rem;
+
 }
 
 #other-1 {
@@ -147,9 +156,7 @@ span a {
 .other-videos iframe {
 	overflow: hidden;
 	height: 100%;
-	width: 55%;
+	width: 45%;
 }
 
-caption {
-	background: black;
-}
+
