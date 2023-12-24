@@ -7,16 +7,20 @@ html {
 	font-family: Montserrat, sans-serif;
 	font-weight: light;
 	font-size: 14px;
-	background-color: black;
+	/*background-color: rgb(48, 56, 48);*/
+  background: rgb(31, 36, 31);
 	color: seashell;
+  scroll-behavior: smooth;
 }
+
+
 
 /* Header */
 header {
 	display: flex;
 	width: 100%;
 	height: 5rem;
-	background: black;
+	background: rgb(20, 23, 20);
 	align-items: center;
 	justify-items: center;
 	position: fixed;
@@ -48,6 +52,10 @@ nav li {
 	font-size: 1.5rem;
 }
 
+#current {
+  color: grey;
+}
+
 nav li :hover {
 	color: grey;
 }
@@ -59,10 +67,10 @@ header a {
 
 /* Footer */
 footer {
-	background: red;
+	background: rgb(20, 23, 20);
 	font-family: Montserrat;
 	z-index: 10;
-	
+	width: ;
 	margin-right: 3%;
 	margin-left: 3%;
 	display: flex;
@@ -74,7 +82,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	width: 55%;
-	background: violet;
+	background: rgb(20, 23, 20);
 	margin: 5rem;
 }
 
@@ -84,19 +92,17 @@ footer {
 }
 
 .social-link {
-	background: purple;
+	background: rgb(20, 23, 20);
 }
 
 .icon {
 	text-decoration: none;
-	background: blue;
 	color: seashell;
 	margin: 1.5rem;
 	flex-wrap: wrap;
 }
 
 #contact {
-	background: orange;
 	height: 30%;
 	margin: 1rem;
 	margin-bottom: 2rem;
@@ -109,21 +115,27 @@ footer {
 
 #contact h4 {
 	font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-#contact p {
+ #mailto {
+  text-decoration: none;
+  color: seashell;
+}
 
+#mailto:hover {
+  background: grey;
 }
 
 .id-email {
 	display: flex;
-	background: yellow;
+	background: rgb(20, 23, 20);
 	flex-direction: row;
 }
 
 .copyright {
 	text-align: center;
-	background: blue;
+	background: black;
 	margin: 1rem;
 }
 
@@ -134,9 +146,10 @@ footer {
 
     .formcarry-container {
       box-sizing: border-box;
-      background: green;
+      background: rgb(31, 36, 31);
       margin: 3rem;
-      padding: 0;
+      padding: 1rem;
+      border-radius: 10px;
       font-family: Montserrat, Helvetica, sans-serif;
       font-size: 14px;
       font-weight: 400;
@@ -252,7 +265,7 @@ footer {
       border-radius: 6px;
       box-sizing: border-box;
       border: 1px solid hsla(var(--fc-primary-hsl));
-      background-color: hsla(var(--fc-primary-hsl));
+      background-color: rgb(133, 133, 133);
       color: #fff;
       cursor: pointer;
     }
@@ -268,7 +281,7 @@ footer {
       border: 0;
       border-radius: 6px;
       box-sizing: border-box;
-      background-color: hsla(var(--fc-primary-hsl));
+      background-color: rgb(133, 133, 133);
       color: #fff;
       cursor: pointer;
       box-shadow: 0 0 0 0 transparent;

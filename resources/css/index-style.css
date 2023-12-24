@@ -1,11 +1,21 @@
+main {
+  position: relative;
+  padding-top: 48%;
+}
 
+main i{
+	position: absolute;
+	margin-left: 5%;
+	margin-top: -5%;
+}
 /*Video Banner*/
 
 .video-banner video {
 	overflow: hidden;
-	height: auto;
-	width: 100% !important;
+	width: 100%;
+	position: fixed;
 	margin-bottom: 3.5rem;
+	z-index: -10;
 }
 
 
@@ -14,10 +24,10 @@
 .about {
 	margin-left: 3%;
 	margin-right: 3%;
-	background: green;
+	background: rgb(31, 36, 31);
 	display: flex;
 	align-content: center;
-	margin-bottom: 3%;
+	margin-bottom: 15%;
 }
 
 #about-text {
@@ -30,7 +40,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background: yellow;
+	background: rgb(31, 36, 31);
 }
 
 .about h2 {
@@ -38,13 +48,12 @@
 }
 
 .about p {
-	background: blue;
 	font-size: 1.2rem;
 	margin-top: 15px;
 	margin-bottom: 15px; 
 }
 
-.about #read-more {
+.about a {
 	width: 18%;
 	background: black;
 	margin-top: 10px;
@@ -52,7 +61,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	border: 2px solid black;
+	text-decoration: none;
+	color: seashell;
 }
 
 span a {
@@ -60,13 +70,13 @@ span a {
 	color: seashell;
 }
 
-.about #read-more:hover {
+.about a:hover {
 	background: grey;
-	border: 2px solid black;
+	
 }
 
 #about-image {
-	background: red;
+	background: rgb(31, 36, 31);
 	width: 25%;
 	height: 25%;
 	display: flex;
@@ -86,9 +96,9 @@ span a {
 .videos {
 	margin-left: 3%;
 	margin-right: 3%;
-	background: red;
+	background: rgb(31, 36, 31);
 	display: flex;
-	margin-bottom: 3%;
+	margin-bottom: 15%;
 	flex-direction: column;
 	justify-items: space-between;
 }
@@ -114,7 +124,7 @@ span a {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	background: orange;
+	background: rgb(31, 36, 31);
 	align-items: center;
 	padding: 0.8rem;
 	margin-bottom: 3rem;
@@ -131,25 +141,24 @@ span a {
 .other-videos {
 	width: 50%;
 	height: auto;
-	background: green;
+	background: rgb(20, 23, 20);
 	display: flex;
 	flex-direction: column;
 	padding: 0.8rem;
 	margin-bottom: 3rem;
+	margin-right: 2rem;
 
 }
 
 #other-1 {
 	display: flex;
 	flex-direction: row;
-	background: blue;
 	padding: 0.5rem;
 }
 
 #other-2 {
 	display: flex;
 	flex-direction: row;
-	background: purple;
 	padding: 0.5rem;
 }
 
@@ -159,4 +168,6 @@ span a {
 	width: 45%;
 }
 
-
+.other-videos .caption {
+	margin-left: 2rem;
+}
