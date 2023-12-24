@@ -3,11 +3,12 @@ main {
   padding-top: 48%;
 }
 
-main i{
+main i {
 	position: absolute;
 	margin-left: 5%;
 	margin-top: -5%;
 }
+
 /*Video Banner*/
 
 .video-banner video {
