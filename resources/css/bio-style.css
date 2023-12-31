@@ -18,7 +18,6 @@ footer {
 /*Bio Pictures*/
 .bio-pics {
 	width: 50%;
-	background: blue;
 	display: flex;
 	flex-direction: column;
 	margin-left: 2rem;
@@ -50,7 +49,7 @@ footer {
 	
 	display: flex;
 	flex-direction: column;
-	background: orange;
+
 	margin-right: 2rem;
 	line-height: 1.5;
 }
@@ -66,7 +65,7 @@ footer {
 	margin-top: 1.2rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
-	background: green;
+
 }
 /*Download Text*/
 .bio-text a {
