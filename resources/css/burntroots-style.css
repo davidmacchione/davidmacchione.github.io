@@ -1,19 +1,19 @@
-
-
 main {
-	position: relative;
-	top: 5rem;
+	
+	top: 10rem;
 }
 
 main h2{
 	font-size: 3rem;
 	padding: 2rem;
-	margin-left: 3rem;
+	background: rgb(20, 23, 20);
 }
 
 content {
 	position: absolute;
 	top: 33rem;
+	display: flex;
+	flex-direction: column;
 }
 
 /* Header */
@@ -67,28 +67,35 @@ nav a:hover {
 
 .banner img {
 	width: 100%;
-
 }
 
 .banner iframe {
 	position: absolute;
 	left: 1rem;
 	bottom: 5%;
-
 } 
 
 /* Player */
 .player {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	margin-top: 2rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
 	align-items: center;
 }
 
 .bandcamp {
 	width: 35%;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
+.bandcamp img {
+	width: 75%;
+	margin: 1rem;
 }
 
 .bandcamp iframe {
@@ -109,7 +116,7 @@ nav a:hover {
 }
 
 .album-text p {
-	margin: 1rem;
+	margin: 2rem;
 	font-size: 1.2rem;
 	line-height: 1.5;
 }
@@ -122,8 +129,9 @@ nav a:hover {
 }
 
 .backside img {
-	width: 26%;
+	width: 22%;
 	margin: 2rem;
+	margin-left: 9rem;
 }
 
 #credits p {
@@ -134,11 +142,8 @@ nav a:hover {
 }
 
 /* Press */
-
-
 .GdM {
 	width: 100%;
-	background: green;
 }
 
 .GdM h3 {
@@ -160,6 +165,7 @@ nav a:hover {
 
 .epk {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 }
 
@@ -171,7 +177,7 @@ nav a:hover {
 	text-decoration: none;
 	color: seashell;
 	padding: 1rem;
-	background: black;
+	background: grey;
 	width: 13rem;
 	height: 1.5rem;
 	text-align: center;
@@ -179,7 +185,7 @@ nav a:hover {
 }
 
 .epk a:hover {
-	background: grey;
+	background: black;
 }
 
 
@@ -209,6 +215,7 @@ nav a:hover {
 
 .group-bio {
 	display: flex;
+	align-items: center;
 }
 
 .group-bio h3 {
@@ -219,7 +226,7 @@ nav a:hover {
 .group-bio p {
 	margin: 2rem;
 	font-size: 1.2rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 .group-bio img {
@@ -244,9 +251,12 @@ nav a:hover {
 }
 
 #group {
-	background: blue;
 	display: flex;
 	flex-direction: column;
-	margin: 1rem;
-	
+	margin: 1rem;	
+}
+
+footer {
+	position: ;
+	bottom: 0;
 }
