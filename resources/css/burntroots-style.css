@@ -1,6 +1,6 @@
 main {
-	
-	top: 10rem;
+	position: relative;
+	top: 5rem;
 }
 
 main h2{
@@ -9,12 +9,12 @@ main h2{
 	background: rgb(20, 23, 20);
 }
 
-content {
+/*content {
 	position: absolute;
 	top: 33rem;
 	display: flex;
 	flex-direction: column;
-}
+}*/
 
 /* Header */
 header {
@@ -61,7 +61,7 @@ nav a:hover {
 
 /* Banner */
 .banner {
-	position: absolute;
+	position:;
 	display: flex;
 }
 
@@ -162,11 +162,15 @@ nav a:hover {
 }
 
 /* Bios */
+.bios {
+	scroll-margin-top: 6rem;
+}
 
 .epk {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+
 }
 
 .epk h3 {
@@ -257,6 +261,6 @@ nav a:hover {
 }
 
 footer {
-	position: ;
-	bottom: 0;
+	position: relative;
+	top: 7rem;
 }

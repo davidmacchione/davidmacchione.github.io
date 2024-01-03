@@ -1,16 +1,20 @@
-main {
-  position: relative;
-  padding-top: 48%;
+html {
+	background-image: url(background.png);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-main i {
-	position: absolute;
-	margin-left: 5%;
-	margin-top: -5%;
+main {
+  position: relative;
+  padding-top: 5rem;
+}
+
+content {
+	position: relative;
+	top: 44rem;
 }
 
 /*Video Banner*/
-
 .video-banner video {
 	overflow: hidden;
 	width: 100%;
@@ -25,8 +29,10 @@ main i {
 	z-index: -15;
 }
 
-
 /* About */
+#jump-to {
+	scroll-margin-top: 17rem;
+}
 
 .about {
 	margin-left: 3%;
@@ -96,6 +102,14 @@ span a {
 	margin: auto;
 	width: 90%;
 	height: auto;
+}
+
+#chevron {
+	position: absolute;
+	margin-left: 3rem;
+	margin-top: -7rem;
+	width: auto;
+	background: none;
 }
 
 /* Videos */
@@ -177,4 +191,9 @@ span a {
 
 .other-videos .caption {
 	margin-left: 2rem;
+}
+
+footer {
+	position: relative;
+  top: 40rem;
 }
