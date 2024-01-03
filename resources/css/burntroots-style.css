@@ -1,7 +1,252 @@
-.burnt-roots video {
-	overflow: hidden;
-	width: 100% ;
-	height: 100%;
-	position: fixed;
+
+
+main {
+	position: relative;
+	top: 5rem;
+}
+
+main h2{
+	font-size: 3rem;
+	padding: 2rem;
+	margin-left: 3rem;
+}
+
+content {
+	position: absolute;
+	top: 33rem;
+}
+
+/* Header */
+header {
+	height: 5rem;
+	display: flex;
+}
+
+header h2 {
+	margin-left: 2rem;
+}
+
+nav {
+	margin-left: auto;
+	margin-right: 4rem;
+	align-items: center;
+}
+
+nav a {
+	margin-left: 3rem;
+}
+
+nav a:hover {
+	color: grey;
+}
+
+/*#epk-nav {
+	margin-left: auto;
+	margin-right: 2rem;
+}
+
+#epk-nav :hover {
+	color: grey;
+}
+
+#home {
+	margin-left: auto;
+	margin-right: 3rem;
+}
+
+#home :hover {
+	color: grey;
+}
+*/
+
+/* Banner */
+.banner {
+	position: absolute;
+	display: flex;
+}
+
+.banner img {
+	width: 100%;
+
+}
+
+.banner iframe {
+	position: absolute;
+	left: 1rem;
+	bottom: 5%;
+
+} 
+
+/* Player */
+.player {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+}
+
+.bandcamp {
+	width: 35%;
+	display: flex;
+	justify-content: center;
+}
+
+.bandcamp iframe {
+	margin: 1rem;
+}
+
+/* Album Text */
+.album-text {
+	width: 65%;
+	margin: 1rem;
+}
+
+.album-text h3 {
+	margin: 2rem;
+	margin-bottom: 3rem;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.album-text p {
+	margin: 1rem;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+/* Back */
+.backside {
+	display: flex;
+	align-items: center;
+	background: grey;
+}
+
+.backside img {
+	width: 26%;
+	margin: 2rem;
+}
+
+#credits p {
+
+	
+	margin: 2rem;
+	line-height: 1.5;
+}
+
+/* Press */
+
+
+.GdM {
+	width: 100%;
+	background: green;
+}
+
+.GdM h3 {
+	padding-top: 2rem;
+	padding-left: 4rem;
+}
+
+.GdM img {
+	width: 50%;
+	padding: 2rem;
+	transition: 0.5s 0.3s;
+}
+
+.GdM img:hover {
+	transform: scale(1.8) translateX(23%) translateY(0%);
+}
+
+/* Bios */
+
+.epk {
+	display: flex;
+	align-items: center;
+}
+
+.epk h3 {
+	line-height: 2;
+}
+
+.epk a {
+	text-decoration: none;
+	color: seashell;
+	padding: 1rem;
+	background: black;
+	width: 13rem;
+	height: 1.5rem;
+	text-align: center;
+	margin-left: 3rem;
+}
+
+.epk a:hover {
+	background: grey;
+}
+
+
+.artist-bio h3 {
+	font-size: 2rem;
+	margin: 2rem;
+	width: 15%;
+}
+
+.artist-bio {
+	display: flex;
+	align-items: center;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+.artist-bio p {
+	width: 70%;
+	font-size: 1.4rem;
+	margin-right: 3rem;
+}
+
+.artist-bio img {
+	width: 20%;
+	height: 20%;
+}
+
+.group-bio {
+	display: flex;
+}
+
+.group-bio h3 {
+	font-size: 2rem;
+	margin: 2rem;
+}
+
+.group-bio p {
+	margin: 2rem;
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
+}
+
+.group-bio img {
+	width: 50%;
+	height: 50%;
+	margin: 2rem;
+}
+
+.group-bio a {
+	text-decoration: none;
+	color: seashell;
+	padding: 1rem;
+	background: black;
+	width: 30%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.group-bio a:hover {
+	background: grey;
+}
+
+#group {
+	background: blue;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
 	
 }
