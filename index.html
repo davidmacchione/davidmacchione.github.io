@@ -25,8 +25,20 @@
 </head>
 
 <body>
-	<header>
+	<header class="desktop">
 		<h1><a href="./index.html">David Macchione | Music</a></h1>
+		<nav>
+			<ul>
+				<li><a href="./burnt-roots.html">"Burnt Roots"</a></li>
+				<li><a href="./bio.html">Bio</a></li>
+				<li><a href="./music.html">Music</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<header class="mobile">
+		<h1><a href="./index.html">David Macchione Music</a></h1>
 		<nav>
 			<ul>
 				<li><a href="./burnt-roots.html">"Burnt Roots"</a></li>
@@ -81,28 +93,27 @@
 	</main>
 
 	<footer>
-		<section class="id-email">
-		
-			<section class="formcarry-container">
-				<h2>Join the mailinglist!</h2>
-				 <form action="https://formcarry.com/s/8jJuEO-Xrj" method="POST" enctype="multipart/form-data">
-				   
-			    <div class="formcarry-block">
-			      <label for="fc-generated-1-name">Full Name</label>
-			      <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
-			  	</div>
-				  	
-				<div class="formcarry-block">
-				   <label for="fc-generated-1-email">Your Email Address</label>
-				   <input type="email" name="email" id="fc-generated-1-email" placeholder="john@doe.com" />
-				</div>
+		<div class="footer-block">
+				<section class="formcarry-container">
+					<h2>Join the mailinglist!</h2>
+					 <form action="https://formcarry.com/s/8jJuEO-Xrj" method="POST" enctype="multipart/form-data">
+					   
+				    <div class="formcarry-block">
+				      <label for="fc-generated-1-name">Full Name</label>
+				      <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
+				  	</div>
+					  	
+					<div class="formcarry-block">
+					   <label for="fc-generated-1-email">Your Email Address</label>
+					   <input type="email" name="email" id="fc-generated-1-email" placeholder="john@doe.com" />
+					</div>
 
-				<div class="formcarry-block">  
-					<button type="submit">Send</button>
-	    		</div>
-	  
-	 		 	</form>
-			</section>
+					<div class="formcarry-block">  
+						<button type="submit">Send</button>
+		    		</div>
+		  
+		 		 	</form>
+				</section>
 
 			<section class="right-side">
 				<h2>Contacts:</h2>
@@ -122,6 +133,7 @@
 				</div>
 			</section>	
 		</section>
+		</div>
 
 			<div class="copyright">
 			<p>&copy David Macchione - 2024</p>
