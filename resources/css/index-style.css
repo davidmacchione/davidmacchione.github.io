@@ -235,6 +235,9 @@ footer {
 /* Mobile */
 @media only screen and (max-device-width: 640px) {
 
+#chevron {
+	display: none;
+}
 
 .about {
 	flex-direction: column;
