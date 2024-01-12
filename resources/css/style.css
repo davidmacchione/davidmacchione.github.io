@@ -350,6 +350,13 @@ footer {
     margin: 5rem;
 }
 
+footer .social-links {
+  width: 120%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 }
 
 /* Tablet 
@@ -495,7 +502,7 @@ footer .social-links {
 }
 
 footer .social-links {
-  width: 100%;
+  width: 83%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
