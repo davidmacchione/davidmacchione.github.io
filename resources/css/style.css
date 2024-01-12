@@ -4,14 +4,13 @@
 }
 
 html {
-	font-family: Montserrat, sans-serif;
+	font-family: Montserrat, Helvetica, sans-serif;
 	font-weight: light;
 	font-size: 14px;
   background: rgb(31, 36, 31);
 	color: seashell;
   scroll-behavior: smooth;
 }
-
 
 /*Header*/
 header {
@@ -21,7 +20,7 @@ header {
   align-items: center;
   justify-items: center;
   font-family: Montserrat;
-  z-index: 20;
+  z-index: 10;
 }
 
 header h1 {
@@ -32,6 +31,7 @@ header h1 {
 
 nav {
   display: flex;
+  width: 100%;
   margin-left: auto;
   height: 3rem;
   margin-right: 5rem;
@@ -39,12 +39,10 @@ nav {
 
 nav ul {
   display: flex;
-  flex-direction: row;
 }
 
 nav li {
   list-style-type: none;
-  margin: auto 1.5rem;
   font-size: 1.5rem;
 }
 
@@ -52,7 +50,7 @@ nav li {
   color: grey;
 }
 
-nav li:hover {
+.desktop-menu li:hover {
   color: grey;
 }
 
@@ -325,6 +323,14 @@ header.desktop {
 	height: 5rem;
 }
 
+nav ul {
+  flex-direction: row;
+}
+
+nav li {
+  margin: auto 1.5rem;
+}
+
 /*Desktop footer*/
 footer {
   display: flex;
@@ -368,15 +374,113 @@ header.desktop {
   display: none;
 }
 
-header.mobile  {
+header.mobile {
   height: 10rem;
+  position: static;
 }
 
 header.mobile h1 {
-  margin-left: 0.8rem;
+  font-size: 2rem;
+  margin-left: 1.2rem;
 }
 
+/* Responsive mobile nav*/
+
+/*
+nav {
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  position: absolute;
+  top: 10rem;
+  background: black;
+  overflow: hidden;
+}
+*/
+
+nav ul {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav li {
+  margin: 2.5rem;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamb {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 0.7rem;
+  padding: 40px 20px;
+  z-index: 30;
+}
+
+.hamb-line {
+  background: white;
+  color: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 7px;
+}
+.hamb-line::after{
+    top: -7px;
+}
+
+.side-menu {
+    display: none;
+}
+
+nav {
+  display: none;
+}
+
+.side-menu:checked ~ nav{
+  display: flex;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 20;
+  position: absolute;
+  top: 10rem;
+  padding-bottom: 5rem;
+  background: black;
+  overflow: hidden;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
 /* mobile footer*/
+
 footer {
   display: flex;
   flex-direction: column;
