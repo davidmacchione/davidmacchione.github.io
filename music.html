@@ -25,11 +25,24 @@
 </head>
 
 <body>
-
-	<header>
-		<h1><a href="./index.html">David Macchione | Music</h1>
+	<header class="desktop">
+		<h1><a href="./index.html">David Macchione | Music</a></h1>
 		<nav>
-			<ul>
+			<ul class="desktop-menu">
+				<li><a href="./burnt-roots.html">"Burnt Roots"</a></li>
+				<li><a href="./bio.html">Bio</a></li>
+				<li><a id="current" href="./music.html">Music</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<header class="mobile">
+		<h1><a href="./index.html">David<br>Macchione<br> Music</a></h1>
+		<input class="side-menu" type="checkbox" id="side-menu"/>
+		<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+		<nav>
+			<ul class="mobile-menu">
 				<li><a href="./burnt-roots.html">"Burnt Roots"</a></li>
 				<li><a href="./bio.html">Bio</a></li>
 				<li><a id="current" href="./music.html">Music</a></li>

@@ -18,20 +18,12 @@ header {
   width: 100%;
   background: rgb(20, 23, 20);
   align-items: center;
-  justify-items: center;
   font-family: Montserrat;
   z-index: 10;
 }
 
-header h1 {
-  font-size: 2rem;
-  margin-left: 3rem;
-  margin-right: 1.5rem;
-}
-
 nav {
   display: flex;
-  width: 100%;
   margin-left: auto;
   height: 3rem;
   margin-right: 5rem;
@@ -311,8 +303,14 @@ footer {
 @media only screen and (min-device-width:964px) {
 
 /* Desktop header */
-header {
+header.desktop {
   position: fixed;
+}
+
+header.desktop h1 {
+  font-size: 2rem;
+  margin-left: 3rem;
+  width: auto;
 }
 
 header.mobile {
@@ -325,6 +323,7 @@ header.desktop {
 
 nav ul {
   flex-direction: row;
+  margin-left: auto;
 }
 
 nav li {
@@ -367,7 +366,7 @@ header.desktop {
 
 
 /* Mobile */
-@media only screen and (max-device-width: 640px) {
+@media only screen and (max-device-width: 963px) {
 
 /*mobile header*/
 header.desktop {
@@ -460,6 +459,7 @@ nav {
   max-height: 100%;
   width: 100%;
   height: auto;
+  align-items: center;
   z-index: 20;
   position: absolute;
   top: 10rem;
