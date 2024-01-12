@@ -9,6 +9,11 @@ main {
   padding-top: 5rem;
 }
 
+main h2 {
+	padding-top: 1rem;
+	padding-bottom: 0.7rem;
+}
+
 /*Video Banner*/
 .video-banner video {
 	overflow: hidden;
@@ -207,6 +212,10 @@ content {
 	margin-bottom: 3rem;
 }
 
+.featured iframe {
+	width: 85%;
+	height: 85%;
+}
 
 .other-videos {
 	width: 50%;
@@ -222,6 +231,15 @@ content {
 
 #other-2 {
 	flex-direction: row;
+}
+
+.other-videos iframe {
+	width: 50%;
+	padding-left: 2rem;
+}
+
+.other-videos .caption {
+	width: 35%;
 }
 
 
@@ -269,35 +287,43 @@ height: auto;
 
 #video-containers {
 	flex-direction: column;
+	padding: 0.5rem;
 }
 
-.featured {
-	width: auto;
+.featured iframe{
+	width: 100%;
+	height: 100%;
 }
 
 .other-videos {
-	width: 90%;
-	flex-direction: row;
+	flex-direction: column;
 	margin: auto;
+	align-content: center;
 }
 
 #other-1 {
 	flex-direction: column;
-	width: 50%;
-	height: 50%;
 	align-items: center;
 }
 
 #other-2 {
 	flex-direction: column;
-	width: 50%;
-	height: 50%;
 	align-items: center;
+}
+
+#other-1 iframe {
+	width: 70%;
+	height: 70%;
+}
+
+#other-2 iframe {
+	width: 70%;
+	height: 70%;
 }
 
 footer {
 	position: relative;
-	top: 8rem;
+	top: 4rem;
 }
 
 }
