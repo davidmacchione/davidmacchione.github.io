@@ -107,7 +107,7 @@ span a {
 	margin-right: 3%;
 	background: rgb(31, 36, 31);
 	display: flex;
-	margin-bottom: 15%;
+	margin-bottom: 5rem;
 	flex-direction: column;
 	justify-items: space-between;
 }
@@ -170,8 +170,13 @@ span a {
 	margin-left: 2rem;
 }
 
+.insta a {
+	text-decoration: none;
+	color: seashell;
+}
+
 /*Desktop*/
-@media only screen and (min-device-width:964px) {
+@media only screen and (min-device-width:641px) {
 
 content {
 	position: relative;
@@ -242,10 +247,18 @@ content {
 	width: 35%;
 }
 
+.insta {
+	margin: 2.5rem;
+}
+
+.insta h2 {
+	font-size: 3.5rem;
+	margin-bottom: 1rem;
+}
 
 footer {
 	position: relative;
-  	top: 40rem;
+  	top: 48rem;
 }
 
 }
@@ -319,6 +332,17 @@ height: auto;
 #other-2 iframe {
 	width: 70%;
 	height: 70%;
+}
+
+.insta {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.insta h2 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	margin-left: -1rem;
 }
 
 footer {
