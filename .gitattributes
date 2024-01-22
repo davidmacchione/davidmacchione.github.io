@@ -1,2 +1,8 @@
 *.mov* filter=lfs diff=lfs merge=lfs -text
 34[[:space:]]copy.mov filter=lfs diff=lfs merge=lfs -text
+Roots filter=lfs diff=lfs merge=lfs -text
+- filter=lfs diff=lfs merge=lfs -text
+front filter=lfs diff=lfs merge=lfs -text
+copy.png filter=lfs diff=lfs merge=lfs -text
+/Users/david/Documents/GitHub/davidmacchione.github.io/resources/images/Burnt filter=lfs diff=lfs merge=lfs -text
+/Users/david/Documents/GitHub/davidmacchione.github.io/resources/images filter=lfs diff=lfs merge=lfs -text
