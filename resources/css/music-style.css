@@ -1,18 +1,211 @@
-#music {
-	height: 20rem;
-	background: red;
-}
-
-
-#music h2 {
-	font-size: 5rem;
-}
-
 main {
 	position: relative;
-	top: 5rem;
+	top: 7rem;
 }
 
 footer {
-	margin-top: 6rem;
+	margin-top: 10rem;
+}
+
+/* collapsing divs */
+
+/* DIV 1*/
+
+/* Label styling */
+label[for="first"] {
+	display: flex;
+ 	height: 2rem;
+ 	font-size: 1.5rem;
+  	background: rgb(20, 23, 20);
+  	padding: 16px; 
+  	margin-top: 1rem;
+  	align-items: center;
+}
+
+label i {
+	margin-left: 2rem;
+}
+
+input[type=checkbox] ~ label:hover {
+	color: black;  
+	background: lightgray;
+}
+
+/* toggle code */
+input[type=checkbox] {
+  display: none;
+}
+
+.inner {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.5s ease-out;
+	
+}
+
+[id="first"]:checked ~ .inner {
+ 	grid-template-rows: 1fr;
+ }
+
+[id="first"]:checked ~ label.first i {
+ 	transform: rotate(-180deg);
+ 	transition: transform 0.5s;
+}
+
+/* Div styling */
+.firstDiv {
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+}
+
+/* DIV 2*/
+
+label[for="second"] {
+	display: flex;
+ 	height: 2rem;
+ 	font-size: 1.5rem;
+  	background: rgb(20, 23, 20);
+  	padding: 16px; 
+  	margin-top: 1rem;
+  	align-items: center;
+}
+
+[id="second"]:checked ~ .inner2 {
+ 	grid-template-rows: 1fr;
+}
+
+[id="second"]:checked ~ label.second i {
+ 	transform: rotate(-180deg);
+ 	transition: transform 0.5s;
+}
+
+.secondDiv {
+	display: flex;
+	overflow: hidden;
+}
+
+#sideman {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.inner2 {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.5s ease-out;
+}
+
+/* Album container */
+.albumContainer {
+	display: inline-flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	background: rgb(26, 31, 26);
+	margin: 1rem;
+	height: 750px;
+	width: 380px;
+	border-radius: 2px;
+}
+
+.albumContainer h3 {
+	font-size: 2.2rem;
+	margin: 1rem;
+	text-align: center;
+}
+
+.albumContainer img {
+	width: 80%;
+}
+
+.albumContainer p {
+	font-size: 1.1rem;
+	padding: 0.5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	overflow: scroll;
+}
+
+.albumContainer span {
+	font-size: 1rem;
+	padding: 0.5rem;
+	margin: 0.5rem;
+}
+
+.albumLinks ul {
+
+	bottom: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.albumLinks li, .albumLinks a {
+	margin: 0.5rem;
+	margin-bottom: 1rem;
+	color: seashell;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.albumLinks li, a:hover {
+	color: black;
+}
+
+/*Desktop*/
+@media only screen and (min-device-width:964px) {
+
+#quintet {
+	background: rgb(26, 31, 26);
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+	margin: auto;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+#quintetText {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	justify-content: center;
+}
+
+#quintetText h2 {
+	font-size: 3rem;
+}
+
+#quintetText p {
+	margin-top: 1rem;
+	margin-right: 4rem;
+}
+
+#quintetImage {
+	display: flex;
+	width: 40%;
+}
+
+#quintet img {
+	width: 100%;
+}
+
+#discography {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+}
+
+#discography h2 {
+	font-size: 2.5rem;
+	
+}
+
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 963px) {
+
 }
