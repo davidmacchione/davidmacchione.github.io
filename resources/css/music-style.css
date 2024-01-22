@@ -140,7 +140,7 @@ label[for="second"] {
 	list-style-type: none;
 }
 
-.albumLinks li, a:hover {
+.albumLinks li, .albumLinks a:hover {
 	color: black;
 }
 
