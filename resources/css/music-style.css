@@ -1,12 +1,3 @@
-main {
-	position: relative;
-	top: 7rem;
-}
-
-footer {
-	margin-top: 10rem;
-}
-
 /* collapsing divs */
 
 /* DIV 1*/
@@ -156,6 +147,15 @@ label[for="second"] {
 /*Desktop*/
 @media only screen and (min-device-width:964px) {
 
+main {
+	position: relative;
+	top: 7rem;
+}
+
+footer {
+	margin-top: 10rem;
+}
+
 #quintet {
 	background: rgb(26, 31, 26);
 	display: flex;
@@ -207,5 +207,63 @@ label[for="second"] {
 
 /* Mobile */
 @media only screen and (max-device-width: 963px) {
+
+main {
+	position: relative;
+	top: 2rem;
+}
+
+footer {
+	margin-top: 6rem;
+}
+
+#quintet {
+	background: rgb(26, 31, 26);
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-bottom: 2rem;
+	margin: 2rem;
+}
+
+#quintetText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+
+#quintetText h2 {
+	font-size: 2rem;
+	padding-top: 1rem;
+}
+
+#quintetText p {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+}
+
+#quintetImage {
+	display: flex;
+	margin: auto;
+}
+
+#quintet img {
+	width: 90%;
+	padding: 1rem;
+}
+
+#discography {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+}
+
+#discography h2 {
+	font-size: 2.5rem;
+	
+}
 
 }
