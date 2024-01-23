@@ -39,7 +39,7 @@ nav li {
 }
 
 nav a:hover {
-  color: grey;
+  color: gray;
 }
 
 #current {
@@ -86,6 +86,10 @@ footer {
   color: seashell;
   margin: 1.5rem;
   flex-wrap: wrap;
+}
+
+.icon:hover {
+  color: grey;
 }
 
 #contact {

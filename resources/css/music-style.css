@@ -141,7 +141,7 @@ label[for="second"] {
 }
 
 .albumLinks li, .albumLinks a:hover {
-	color: black;
+	color: grey;
 }
 
 /*Desktop*/

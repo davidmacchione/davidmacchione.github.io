@@ -103,60 +103,58 @@ span a {
 /* Videos */
 
 .videos {
-	margin-left: 3%;
-	margin-right: 3%;
+	width: 95%;
+	margin: auto;
 	background: rgb(31, 36, 31);
 	display: flex;
-	margin-bottom: 5rem;
-	flex-direction: column;
-	justify-items: space-between;
+	flex-direction: row;
 }
 
 .videos h2 {
-	margin-left: 3%;
 	font-size: 3rem;
-	margin-top: 1%;
-	margin-bottom: 1%;
+	margin-left: 3rem;
 }
 
-.videos .caption {
+.videos.caption {
 	margin: auto;
 }
 
-#video-containers {
-	display: flex;
-}
-
 .featured {
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	background: rgb(31, 36, 31);
-	align-items: center;
-	padding: 0.8rem;
 }
 
 .featured iframe {
+	margin: auto;
 	width: 73%;
 }
 
 .featured .caption {
 	margin-top: 1.5rem;
+	margin-left: 3rem;
 }
 
 .other-videos {
-	height: auto;
-	background: rgb(20, 23, 20);
 	display: flex;
+	width: 50%;
+	flex-direction: column;
+	align-content: center;
 }
 
 #other-1 {
 	display: flex;
 	padding: 0.5rem;
+	background: rgb(20, 23, 20);
+	margin: 0.5rem;
 }
 
 #other-2 {
 	display: flex;
 	padding: 0.5rem;
+	background: rgb(20, 23, 20);
+	margin: 0.5rem;
 }
 
 .other-videos iframe {
@@ -213,7 +211,7 @@ content {
 
 .featured {
 	width: 50%;
-	margin-bottom: 3rem;
+	padding-bottom: 3rem;
 }
 
 .featured iframe {
@@ -225,8 +223,7 @@ content {
 	width: 50%;
 	flex-direction: column;
 	padding: 0.8rem;
-	margin-bottom: 3rem;
-	margin-right: 2rem;
+	margin-right: 1rem;
 }
 
 #other-1 {
